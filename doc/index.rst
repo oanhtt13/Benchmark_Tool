@@ -11,4 +11,5 @@ Welcome to LLM Benchmark Tool documentation!
    :caption: Contents:
 
    srsDocument.rst
+   architectureDesign.rst
    hldDocument.rst
