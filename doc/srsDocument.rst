@@ -34,7 +34,7 @@ The LLM Benchmark Tool is a standalone application that interfaces with various 
 
 -   Evaluate LLMs based on predefined metrics.
 -   Generate reports summarizing benchmark results.
--   Provide a user-friendly interface for configuring benchmarks.
+-   Provide CLI for configuring benchmarks.
 
 3. Specific Requirements
 ------------------------
