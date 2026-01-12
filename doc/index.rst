@@ -11,3 +11,4 @@ Welcome to LLM Benchmark Tool documentation!
    :caption: Contents:
 
    srsDocument.rst
+   hldDocument.rst
