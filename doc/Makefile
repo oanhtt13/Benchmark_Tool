@@ -7,8 +7,8 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR_VI     = vi
 BUILDDIR_VI      = _build/vi
-SOURCEDIR_EN     = en
-BUILDDIR_EN      = _build/en
+SOURCEDIR_EN     = jp
+BUILDDIR_EN      = _build/jp
 
 # Put it first so that "make" without argument is like "make help".
 help:
