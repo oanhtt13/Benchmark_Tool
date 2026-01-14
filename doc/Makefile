@@ -5,9 +5,9 @@
 # from the environment for the first two.
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
-SOURCEDIR_VI     = ./vi
+SOURCEDIR_VI     = /vi
 BUILDDIR_VI      = _build/vi
-SOURCEDIR_EN     = ./en
+SOURCEDIR_EN     = /en
 BUILDDIR_EN      = _build/en
 
 # Put it first so that "make" without argument is like "make help".
