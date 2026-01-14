@@ -26,7 +26,5 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-
-language = 'ja'
-locale_dí = ['locale/']
-gettext_compact = False
+html_js_files = ['lang.js']
+html_css_files = ['custom.css']
