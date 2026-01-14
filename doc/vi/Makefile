@@ -7,13 +7,13 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR_VI     = ./vi
 BUILDDIR_VI      = _build/vi
-SOURCEDIR_EN     = ./en
-BUILDDIR_EN      = _build/en
+SOURCEDIR_JP     = ./jp
+BUILDDIR_JP      = _build/jp
 
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR_VI)" "$(BUILDDIR_VI)" $(SPHINXOPTS) $(O)
-	@$(SPHINXBUILD) -M help "$(SOURCEDIR_EN)" "$(BUILDDIR_EN)" $(SPHINXOPTS) $(O)
+	@$(SPHINXBUILD) -M help "$(SOURCEDIR_JP)" "$(BUILDDIR_JP)" $(SPHINXOPTS) $(O)
 
 .PHONY: help Makefile
 
@@ -21,4 +21,4 @@ help:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR_VI)" "$(BUILDDIR_VI)" $(SPHINXOPTS) $(O)
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR_EN)" "$(BUILDDIR_EN)" $(SPHINXOPTS) $(O)
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR_JP)" "$(BUILDDIR_JP)" $(SPHINXOPTS) $(O)
