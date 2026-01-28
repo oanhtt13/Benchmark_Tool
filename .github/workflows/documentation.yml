@@ -17,6 +17,7 @@ jobs:
       - name: Sphinx build
         run: |
           sphinx-build doc/vi _build/vi
+      - name: Sphinx build
         run: |
           sphinx-build doc/jp _build/jp
       - name: Deploy to GitHub Pages
