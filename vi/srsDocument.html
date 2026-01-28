@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRS Document &mdash; LLM Benchmark Tool 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/lang.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Architecture Design" href="architectureDesign.html" />
+    <link rel="prev" title="Welcome to LLM Benchmark Tool documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            LLM Benchmark Tool
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SRS Document</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">1. Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#purpose">1.1 Purpose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scope">1.2 Scope</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#overall-description">2. Overall Description</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#product-perspective">2.1 Product Perspective</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#product-functions">2.2 Product Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#specific-requirements">3. Specific Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#functional-requirements">3.1 Functional Requirements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#user-interface">3.1.1 User Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#benchmarking-capabilities">3.1.2 Benchmarking Capabilities</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#non-functional-requirements">3.2 Non-functional Requirements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#performance-requirements">3.2.1 Performance Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usability-requirements">3.2.2 Usability Requirements</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#external-interface-requirements">4. External Interface Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user-interfaces">4.1 User Interfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-interfaces">4.2 Hardware Interfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#software-interfaces">4.3 Software Interfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#system-features-and-use-cases">5. System Features and Use Cases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#feature-configure-benchmark-parameters">5.1 Feature: Configure Benchmark Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#feature-execute-benchmarks">5.2 Feature: Execute Benchmarks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#feature-view-results-and-reports">5.3 Feature: View Results and Reports</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="architectureDesign.html">Architecture Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hldDocument.html">High Level Design Document</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LLM Benchmark Tool</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">SRS Document</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/srsDocument.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="srs-document">
+<span id="srsdocument"></span><h1>SRS Document<a class="headerlink" href="#srs-document" title="Link to this heading"></a></h1>
+<p>This document outlines the Software Requirements Specification (SRS) for the LLM Benchmark Tool.</p>
+<section id="introduction">
+<h2>1. Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<section id="purpose">
+<h3>1.1 Purpose<a class="headerlink" href="#purpose" title="Link to this heading"></a></h3>
+<p>The purpose of this document is to define the requirements for the LLM Benchmark Tool, which is designed to evaluate and compare the performance of various large language models (LLMs).</p>
+</section>
+<section id="scope">
+<h3>1.2 Scope<a class="headerlink" href="#scope" title="Link to this heading"></a></h3>
+<p>The LLM Benchmark Tool will be used to assess different LLMs based on criteria such as accuracy, speed, and efficiency.</p>
+</section>
+</section>
+<section id="overall-description">
+<h2>2. Overall Description<a class="headerlink" href="#overall-description" title="Link to this heading"></a></h2>
+<section id="product-perspective">
+<h3>2.1 Product Perspective<a class="headerlink" href="#product-perspective" title="Link to this heading"></a></h3>
+<p>The LLM Benchmark Tool is a standalone application that interfaces with various LLM APIs.</p>
+</section>
+<section id="product-functions">
+<h3>2.2 Product Functions<a class="headerlink" href="#product-functions" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Evaluate LLMs based on predefined metrics.</p></li>
+<li><p>Generate reports summarizing benchmark results.</p></li>
+<li><p>Provide CLI for configuring benchmarks.</p></li>
+</ul>
+</section>
+</section>
+<section id="specific-requirements">
+<h2>3. Specific Requirements<a class="headerlink" href="#specific-requirements" title="Link to this heading"></a></h2>
+<section id="functional-requirements">
+<h3>3.1 Functional Requirements<a class="headerlink" href="#functional-requirements" title="Link to this heading"></a></h3>
+<section id="user-interface">
+<h4>3.1.1 User Interface<a class="headerlink" href="#user-interface" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>The tool using CLI for .</p></li>
+<li><p>The GUI shall allow users to select an LLM and configure benchmark parameters.</p></li>
+</ul>
+</section>
+<section id="benchmarking-capabilities">
+<h4>3.1.2 Benchmarking Capabilities<a class="headerlink" href="#benchmarking-capabilities" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>The tool shall support benchmarking of multiple LLMs.</p></li>
+<li><p>The tool shall generate detailed performance reports.</p></li>
+</ul>
+</section>
+</section>
+<section id="non-functional-requirements">
+<h3>3.2 Non-functional Requirements<a class="headerlink" href="#non-functional-requirements" title="Link to this heading"></a></h3>
+<section id="performance-requirements">
+<h4>3.2.1 Performance Requirements<a class="headerlink" href="#performance-requirements" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Benchmark deviation from ArtificialAnalysis.ai: ±5%.</p></li>
+</ul>
+</section>
+<section id="usability-requirements">
+<h4>3.2.2 Usability Requirements<a class="headerlink" href="#usability-requirements" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>The tool shall be easy to use for both technical and non-technical users.</p></li>
+<li><p>The tool shall provide clear instructions and documentation.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="external-interface-requirements">
+<h2>4. External Interface Requirements<a class="headerlink" href="#external-interface-requirements" title="Link to this heading"></a></h2>
+<section id="user-interfaces">
+<h3>4.1 User Interfaces<a class="headerlink" href="#user-interfaces" title="Link to this heading"></a></h3>
+<p>The primary user interface is a graphical application built using Python’s Tkinter library.</p>
+</section>
+<section id="hardware-interfaces">
+<h3>4.2 Hardware Interfaces<a class="headerlink" href="#hardware-interfaces" title="Link to this heading"></a></h3>
+<p>No specific hardware interfaces are required beyond standard computing resources.</p>
+</section>
+<section id="software-interfaces">
+<h3>4.3 Software Interfaces<a class="headerlink" href="#software-interfaces" title="Link to this heading"></a></h3>
+<p>The tool interacts with external APIs provided by various LLM providers.</p>
+</section>
+</section>
+<section id="system-features-and-use-cases">
+<h2>5. System Features and Use Cases<a class="headerlink" href="#system-features-and-use-cases" title="Link to this heading"></a></h2>
+<section id="feature-configure-benchmark-parameters">
+<h3>5.1 Feature: Configure Benchmark Parameters<a class="headerlink" href="#feature-configure-benchmark-parameters" title="Link to this heading"></a></h3>
+<p>Users can configure parameters such as input text length, number of iterations, and model selection.</p>
+</section>
+<section id="feature-execute-benchmarks">
+<h3>5.2 Feature: Execute Benchmarks<a class="headerlink" href="#feature-execute-benchmarks" title="Link to this heading"></a></h3>
+<p>Users can initiate benchmark runs with their configured settings.</p>
+</section>
+<section id="feature-view-results-and-reports">
+<h3>5.3 Feature: View Results and Reports<a class="headerlink" href="#feature-view-results-and-reports" title="Link to this heading"></a></h3>
+<p>Users can view detailed results in tabular format or export them as CSV files.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to LLM Benchmark Tool documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="architectureDesign.html" class="btn btn-neutral float-right" title="Architecture Design" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright workshop participant.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
